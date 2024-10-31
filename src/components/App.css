@@ -14,10 +14,17 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;
+  font-size: 25px;
+  font-family: Impact, sans-serif;
+  background-image: linear-gradient(
+    rgb(220, 162, 162),
+    rgb(200, 114, 144),
+    rgb(206, 173, 178)
+  );
+  color: rgb(2, 2, 2);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 form {
@@ -36,11 +43,18 @@ form textarea {
 nav,
 article {
   height: 100%;
-  padding: 10px;
+  padding: 10px 15px;
+  font-family: "palatino", serif;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
 }
 
 nav {
-  background-color: #dee9ff;
+  background-color: #f4e9f1;
+  font-family: "impact", sans-serif;
+  color: black;
 }
 
 nav p:hover {
@@ -56,8 +70,23 @@ article .body {
   white-space: break-spaces;
 }
 
+button {
+  padding: 10px 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  background-color: #f5e6ec; 
+  border: none;
+  border-radius: 5px;
+}
+
 .error {
   background-color: red;
-  color: gold;
+  color: rgb(252, 190, 35);
+  font-size: 25px;
+  font-family: Impact, sans-serif;
   padding: 5px;
+  border: 2px solid red;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
